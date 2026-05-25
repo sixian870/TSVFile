@@ -42,8 +42,8 @@
             this.chSoundPath = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.chExplain = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.pnlSearch = new System.Windows.Forms.Panel();
-            this.lblSearch = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
+            this.lblSearch = new System.Windows.Forms.Label();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.mnsWord.SuspendLayout();
             this.ssrWord.SuspendLayout();
@@ -81,7 +81,7 @@
             this.tsmiOpen.Name = "tsmiOpen";
             this.tsmiOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.tsmiOpen.ShowShortcutKeys = false;
-            this.tsmiOpen.Size = new System.Drawing.Size(180, 22);
+            this.tsmiOpen.Size = new System.Drawing.Size(109, 22);
             this.tsmiOpen.Text = "開啟(&O)";
             this.tsmiOpen.Click += new System.EventHandler(this.tsmiOpen_Click);
             // 
@@ -90,7 +90,7 @@
             this.tsmiExit.Name = "tsmiExit";
             this.tsmiExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
             this.tsmiExit.ShowShortcutKeys = false;
-            this.tsmiExit.Size = new System.Drawing.Size(180, 22);
+            this.tsmiExit.Size = new System.Drawing.Size(109, 22);
             this.tsmiExit.Text = "離開(&X)";
             this.tsmiExit.Click += new System.EventHandler(this.tsmiExit_Click);
             // 
@@ -107,7 +107,7 @@
             this.tsmiAbout.Name = "tsmiAbout";
             this.tsmiAbout.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
             this.tsmiAbout.ShowShortcutKeys = false;
-            this.tsmiAbout.Size = new System.Drawing.Size(180, 22);
+            this.tsmiAbout.Size = new System.Drawing.Size(107, 22);
             this.tsmiAbout.Text = "關於(&A)";
             this.tsmiAbout.Click += new System.EventHandler(this.tsmiAbout_Click);
             // 
@@ -140,7 +140,7 @@
             this.lvwWord.FullRowSelect = true;
             this.lvwWord.HideSelection = false;
             this.lvwWord.Location = new System.Drawing.Point(0, 31);
-            this.lvwWord.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lvwWord.Margin = new System.Windows.Forms.Padding(4);
             this.lvwWord.Name = "lvwWord";
             this.lvwWord.Size = new System.Drawing.Size(587, 312);
             this.lvwWord.TabIndex = 2;
@@ -176,16 +176,6 @@
             this.pnlSearch.Size = new System.Drawing.Size(459, 31);
             this.pnlSearch.TabIndex = 3;
             // 
-            // lblSearch
-            // 
-            this.lblSearch.AutoSize = true;
-            this.lblSearch.Font = new System.Drawing.Font("微軟正黑體", 9F);
-            this.lblSearch.Location = new System.Drawing.Point(3, 8);
-            this.lblSearch.Name = "lblSearch";
-            this.lblSearch.Size = new System.Drawing.Size(64, 16);
-            this.lblSearch.TabIndex = 0;
-            this.lblSearch.Text = "查詢單字 : ";
-            // 
             // txtSearch
             // 
             this.txtSearch.BackColor = System.Drawing.SystemColors.Window;
@@ -195,6 +185,16 @@
             this.txtSearch.Size = new System.Drawing.Size(372, 18);
             this.txtSearch.TabIndex = 1;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
+            // 
+            // lblSearch
+            // 
+            this.lblSearch.AutoSize = true;
+            this.lblSearch.Font = new System.Drawing.Font("微軟正黑體", 9F);
+            this.lblSearch.Location = new System.Drawing.Point(3, 8);
+            this.lblSearch.Name = "lblSearch";
+            this.lblSearch.Size = new System.Drawing.Size(64, 16);
+            this.lblSearch.TabIndex = 0;
+            this.lblSearch.Text = "查詢單字 : ";
             // 
             // pnlMain
             // 
@@ -216,6 +216,7 @@
             this.Controls.Add(this.pnlMain);
             this.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.MainMenuStrip = this.mnsWord;
+            this.MinimumSize = new System.Drawing.Size(600, 200);
             this.Name = "frmTSVFile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TVS檔案格式讀取程式";
